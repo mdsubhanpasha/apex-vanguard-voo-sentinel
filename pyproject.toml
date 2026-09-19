@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apex-vanguard-voo-sentinel"
+version = "4050.1.0"
+authors = [
+  { name="Mohammad Subhan Pasha", email="contact@apex-vanguard.org" },
+]
+description = "FAANG-Grade Enterprise Trading Anomaly Sentinel for VOO market duplicate detection and leakage prevention."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "pydantic>=2.6.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/apex-vanguard/apex-vanguard-voo-sentinel-4050"
+"Bug Tracker" = "https://github.com/apex-vanguard/apex-vanguard-voo-sentinel-4050/issues"
+"Documentation" = "https://github.com/apex-vanguard/apex-vanguard-voo-sentinel-4050/blob/main/docs/ARCHITECTURE.md"

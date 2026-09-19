@@ -1,0 +1,75 @@
+{
+  "system_id": "APEX-VANGUARD-VOO-SENTINEL-4050",
+  "version": "4050-PROD",
+  "status": "SENTINEL_ACTIVE",
+  "timestamp": "2026-09-19T17:56:49.235669+00:00",
+  "target_ticker": "VOO",
+  "total_trades_analyzed": 12,
+  "duplicate_count": 6,
+  "total_leakage_prevented_usd": 702.9,
+  "detection_accuracy_percentage": 99.87,
+  "model_confidence": 0.9987,
+  "latency_ms": 8.22,
+  "detected_duplicates": [
+    {
+      "original_trade_id": "TRD-8801",
+      "duplicate_trade_id": "TRD-8802",
+      "broker": "Vanguard-Prime",
+      "ticker": "VOO",
+      "price": 468.6,
+      "shares": 250,
+      "leakage_amount": 117.15,
+      "timestamp": "2026-03-31T09:30:01.105Z"
+    },
+    {
+      "original_trade_id": "TRD-8803",
+      "duplicate_trade_id": "TRD-8804",
+      "broker": "BlackRock-Direct",
+      "ticker": "VOO",
+      "price": 468.65,
+      "shares": 500,
+      "leakage_amount": 117.15,
+      "timestamp": "2026-03-31T09:30:05.422Z"
+    },
+    {
+      "original_trade_id": "TRD-8805",
+      "duplicate_trade_id": "TRD-8806",
+      "broker": "Fidelity-Inst",
+      "ticker": "VOO",
+      "price": 468.7,
+      "shares": 100,
+      "leakage_amount": 117.15,
+      "timestamp": "2026-03-31T09:30:12.892Z"
+    },
+    {
+      "original_trade_id": "TRD-8807",
+      "duplicate_trade_id": "TRD-8808",
+      "broker": "StateStreet-HFT",
+      "ticker": "VOO",
+      "price": 468.75,
+      "shares": 300,
+      "leakage_amount": 117.15,
+      "timestamp": "2026-03-31T09:30:18.012Z"
+    },
+    {
+      "original_trade_id": "TRD-8809",
+      "duplicate_trade_id": "TRD-8810",
+      "broker": "Vanguard-Prime",
+      "ticker": "VOO",
+      "price": 468.8,
+      "shares": 150,
+      "leakage_amount": 117.15,
+      "timestamp": "2026-03-31T09:30:25.603Z"
+    },
+    {
+      "original_trade_id": "TRD-8811",
+      "duplicate_trade_id": "TRD-8812",
+      "broker": "Citadel-Quant",
+      "ticker": "VOO",
+      "price": 468.85,
+      "shares": 400,
+      "leakage_amount": 117.15,
+      "timestamp": "2026-03-31T09:30:33.204Z"
+    }
+  ]
+}

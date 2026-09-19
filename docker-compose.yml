@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  sentinel-api:
+    build: .
+    container_name: apex-vanguard-sentinel-api
+    command: uvicorn src.api:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production
+    restart: always
+
+  sentinel-dashboard:
+    build: .
+    container_name: apex-vanguard-sentinel-dashboard
+    command: python dashboard/app.py
+    ports:
+      - "8080:8080"
+    depends_on:
+      - sentinel-api
+    restart: always
